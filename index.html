@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiti Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+    <section class="header">
+        <div class="name">
+        <h1>Maiti Labs</h1>
+    </div>
+        <nav>
+            <a href="index.html"><img src="icon/Logo.png" ></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Awareness Portal</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Team</a></li>
+                    
+                    <a href="" class="login-btn">Login</a>
+                
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+
+        <div class="text-box">
+            <h1>The Voice Of Planet Earth in Every Language!</h1>
+            <p>Global youth-led Non-Profit Organization</p>
+            <a href="" class="hero-btn">Join Us</a>
+            <a href="" class="hero-bt">Awareness Portal
+
+            </a>
+            
+        </div>
+    </section>
+
+<section class="intro">
+    <p>We are a Non-Profit Youth-Led Org fostering Climate Action by making information accessible in every language possible. 🌱</p>
+
+</section>
+
+
+<section class="About">
+    <h1>About Us</h1>
+
+    <div class="first-column">
+        <div class="first-row">
+            <img src="icon/img1.jpg" width="100%" height="auto" >
+            <h2>Youth-Led & Global</h2>
+                <p>We are a global youth-led Non-Profit Organization committed to tackling the pressing climate crisis through our innovative community-first approach.</p>
+                
+               
+        </div>
+        <div class="second-row">
+            <img src="icon/img2.jpg" width="100%" height="auto">
+            <h2>Tech Driven Action</h2>
+                <p>Powerful technology products, specifically cutting-edge news sites, that empower users to raise their voices and contribute to climate action</p>
+                
+               
+        </div>
+        <div class="third-row">
+            <img src="icon/img3.jpg" width="100%" height="auto">
+            <h2>Inclusivity through Translations</h2>
+                <p>Breaking down barriers through advanced artificial intelligence translations. Our content is accessible and readable in any language.</p>
+                
+               
+        </div>
+    </div>
+
+</section>
+
+<section class="event">
+ <div class="title">
+    <h1>Our Initiative</h1>
+
+    <div class="line"></div>
+ </div>
+ <div class="row">
+    <div class="col">
+        <img src="icon/img4.jpg" width="35%" height="auto">
+        <h4>Awareness Portal</h4>
+        <p>Climate Information in<br> Every Language</p>
+        <a href="#" class="ctn">Learn More ></a>
+    </div>
+    <div class="col">
+        <img src="icon/img5.png" width="35%" height="auto">
+        <h4>GreenBit</h4>
+        <p>Compressing data,<br>Expanding Futures</p>
+        <a href="#" class="ctn">Learn More ></a>
+    </div>
+    <div>
+    <a href="" class="hero-bttn">More</a>
+    </div>
+ </div>
+</section>
+
+<section class="events">
+    <h1>Our Community Members Come from ❤️</h1>
+    
+    <div class="gallery-wrap">
+        <img src="icon/back.png" id="backBtn" width="30" height="30">
+   
+        <div class="gallery">
+            <div>
+                <span><img src="icon/i1.png"></span>
+                <span><img src="icon/i6.png"></span>
+                <span><img src="icon/i3.png"></span>
+            </div>
+            <div>
+                <span><img src="icon/i2.png"></span>
+                <span><img src="icon/i4.png"></span>
+                <span><img src="icon/i5.png"></span>
+
+            </div>
+        </div>
+        <img src="icon/next.png" id="nextBtn" width="30" height="30">
+     </div>
+     
+</section>
+
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("wheel",(evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollleft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+
+   nextBtn.addEventListener("click", ()=> {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += 900;
+   });
+
+   backBtn.addEventListener("click", ()=> {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= 900;
+   });
+
+
+
+</script>
+
+
+
+
+<section class="head">
+   
+    <div class="text-boxx">
+        <h1>AWARENESS PORTAL</h1>
+        <p>We speak about important issue to address climate change.</p>
+    
+    
+        <a href="" class="hero-btton">Awareness Portal</a>
+
+</div>
+ 
+
+</section>
+
+
+
+<section class="footer">
+<div>
+    <h1>Maiti Labs</h1>
+    <p>Join a diverse and passionate community,<br> making a lasting impact on our planet.<br> Together, let's raise awareness and accelerate climate action worldwide.<br></p>
+
+    <a href="" class="btn">Join Us</a>
+    <a href="" class="bt">Sign Up</a>
+
+    <div class="icons">
+        <i class="fa fa-envelope"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+
+       var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+       }
+       function hideMenu(){
+        navLinks.style.right = "-500px";
+       }
+
+
+ </script>
+
+
+</body>
+</html>
